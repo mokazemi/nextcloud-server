@@ -110,9 +110,9 @@ export default Vue.extend({
 .files-list__drag-drop-notice {
 	position: absolute;
 	z-index: 9999;
-	top: 0;
-	right: 0;
-	left: 0;
+	inset-block-start: 0;
+	inset-inline-end: 0;
+	inset-inline-start: 0;
 	display: none;
 	align-items: center;
 	justify-content: center;
@@ -147,8 +147,8 @@ export default Vue.extend({
 
 	&__close {
 		position: absolute !important;
-		top: 10px;
-		right: 10px;
+		inset-block-start: 10px;
+		inset-inline-end: 10px;
 	}
 }
 

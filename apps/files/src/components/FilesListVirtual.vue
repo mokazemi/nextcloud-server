@@ -350,7 +350,7 @@ export default Vue.extend({
 			// Pinned on top when scrolling
 			position: sticky;
 			z-index: 10;
-			top: 0;
+			inset-block-start: 0;
 		}
 
 		// Table footer
@@ -394,10 +394,10 @@ export default Vue.extend({
 		.files-list__row--failed {
 			position: absolute;
 			display: block;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
+			inset-block-start: 0;
+			inset-inline-start: 0;
+			inset-inline-end: 0;
+			inset-block-end: 0;
 			opacity: .1;
 			z-index: -1;
 			background: var(--color-error);
@@ -505,8 +505,8 @@ export default Vue.extend({
 
 			&-favorite {
 				position: absolute;
-				top: 0px;
-				right: -10px;
+				inset-block-start: 0px;
+				inset-inline-end: -10px;
 			}
 
 			// Folder overlay
@@ -658,8 +658,8 @@ tbody.files-list__tbody.files-list__tbody--grid {
 	.files-list__row-checkbox {
 		position: absolute;
 		z-index: 9;
-		top: 0;
-		left: 0;
+		inset-block-start: 0;
+		inset-inline-start: 0;
 		overflow: hidden;
 		width: var(--clickable-area);
 		height: var(--clickable-area);
@@ -669,8 +669,8 @@ tbody.files-list__tbody.files-list__tbody--grid {
 	// Star icon in the top right
 	.files-list__row-icon-favorite {
 		position: absolute;
-		top: 0;
-		right: 0;
+		inset-block-start: 0;
+		inset-inline-end: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -707,8 +707,8 @@ tbody.files-list__tbody.files-list__tbody--grid {
 
 	.files-list__row-actions {
 		position: absolute;
-		right: 0;
-		bottom: 0;
+		inset-inline-end: 0;
+		inset-block-end: 0;
 		width: var(--clickable-area);
 		height: var(--clickable-area);
 	}

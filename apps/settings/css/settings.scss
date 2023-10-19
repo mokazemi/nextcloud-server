@@ -184,8 +184,8 @@ select {
 		> form span {
 			&[class^='icon-checkmark'], &[class^='icon-error'] {
 				position: relative;
-				right: 8px;
-				top: -28px;
+				inset-inline-end: 8px;
+				inset-block-start: -28px;
 				pointer-events: none;
 				float: right;
 			}
@@ -194,8 +194,8 @@ select {
 
 	.verify {
 		position: relative;
-		left: 100%;
-		top: 0;
+		inset-inline-start: 100%;
+		inset-block-start: 0;
 		height: 0;
 
 		img {
@@ -219,8 +219,8 @@ select {
 /* only show pointer cursor when popup will be there */
 .verification-dialog {
 	display: none;
-	right: -9px;
-	top: 40px;
+	inset-inline-end: -9px;
+	inset-block-start: 40px;
 	width: 275px;
 
 	p {
@@ -269,7 +269,7 @@ select {
 	}
 
 	.federationScopeMenu {
-		top: 44px;
+		inset-block-start: 44px;
 
 		&.popovermenu {
 			.menuitem {
@@ -380,13 +380,13 @@ table.nostyle {
 		.personal-show-container {
 			#pass2 {
 				position: relative;
-				top: 0.5rem;
+				inset-block-start: 0.5rem;
 			}
 			.personal-show-label {
-				top: 34px !important;
+				inset-block-start: 34px !important;
 				margin-right: 0;
 				margin-top: 0 !important;
-				right: 3px;
+				inset-inline-end: 3px;
 			}
 		}
 
@@ -400,7 +400,7 @@ table.nostyle {
 
 		.strengthify-wrapper {
 			position: absolute;
-			left: 0;
+			inset-inline-start: 0;
 			width: 100%;
 			border-radius: 0 0 2px 2px;
 			margin-top: 5px;
@@ -460,8 +460,8 @@ li.active {
 
 #usersearchform {
 	position: absolute;
-	top: 2px;
-	right: 0;
+	inset-block-start: 2px;
+	inset-inline-end: 0;
 
 	input {
 		width: 150px;
@@ -632,7 +632,7 @@ span.version {
 
 .app-score {
 	position: relative;
-	top: 4px;
+	inset-block-start: 4px;
 	opacity: .5;
 }
 
@@ -717,8 +717,8 @@ span.version {
 
 	.close {
 		position: absolute;
-		top: 0;
-		right: 0;
+		inset-block-start: 0;
+		inset-inline-end: 0;
 		padding: 14px;
 		opacity: 0.5;
 		z-index: 1;
@@ -853,7 +853,7 @@ span.version {
 .app-description-container {
 	clear: both;
 	position: relative;
-	top: 7px;
+	inset-block-start: 7px;
 }
 
 .app-description {
@@ -904,7 +904,7 @@ span.version {
 		width: 100%;
 		background-color: var(--color-main-background);
 		position: sticky;
-		top: 0;
+		inset-block-start: 0;
 		z-index: 1;
 		display: flex;
 		align-items: center;
@@ -977,7 +977,7 @@ span.version {
 
 			.icon-loading-small {
 				display: inline-block;
-				top: 4px;
+				inset-block-start: 4px;
 				margin-right: 10px;
 			}
 		}
@@ -985,7 +985,7 @@ span.version {
 
 	&:not(.installed) .app-image-icon svg {
 		position: absolute;
-		bottom: 43px;
+		inset-block-end: 43px;
 		/* position halfway vertically */
 		width: 64px;
 		height: 64px;
@@ -1059,7 +1059,7 @@ span.version {
 			margin-bottom: 12px;
 			.enable {
 				position: relative;
-				top: -1px;
+				inset-block-start: -1px;
 				margin-left: 12px;
 			}
 
@@ -1265,7 +1265,7 @@ span {
 
 /* OPERA hack for strengthify*/
 doesnotexist:-o-prefocus, .strengthify-wrapper {
-	left: 185px;
+	inset-inline-start: 185px;
 	width: 129px;
 }
 

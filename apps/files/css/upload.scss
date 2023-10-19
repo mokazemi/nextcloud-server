@@ -54,14 +54,14 @@
 }
 #uploadprogressbar .ui-progressbar-value.ui-widget-header.ui-corner-left {
 	height: calc(100% + 2px);
-	top: -2px;
-	left: -1px;
+	inset-block-start: -2px;
+	inset-inline-start: -1px;
 	position: absolute;
 	overflow: hidden;
 	background-color: var(--color-primary-element);
 }
 #uploadprogressbar .label {
-	top: 8px;
+	inset-block-start: 8px;
 	opacity: 1;
 	overflow: hidden;
 	white-space: nowrap;
@@ -171,7 +171,7 @@
 .oc-dialog .fileexists #allfiles {
 	vertical-align: bottom;
 	position: relative;
-	top: -3px;
+	inset-block-start: -3px;
 }
 .oc-dialog .fileexists #allfiles + span{
 	vertical-align: bottom;

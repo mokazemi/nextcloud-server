@@ -296,7 +296,7 @@ export default Vue.extend({
 		justify-content: end;
 		padding: calc(var(--margin) * 2) var(--margin);
 		position: sticky;
-		bottom: 0;
+		inset-block-end: 0;
 		background-image: linear-gradient(0, var(--gradient-main-background));
 
 		button, input[type='submit'] {
@@ -311,8 +311,8 @@ export default Vue.extend({
 
 	&__loading {
 		position: absolute;
-		top: 0;
-		left: 0;
+		inset-block-start: 0;
+		inset-inline-start: 0;
 		justify-content: center;
 		width: 100%;
 		height: 100%;

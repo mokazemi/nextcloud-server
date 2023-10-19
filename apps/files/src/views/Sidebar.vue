@@ -554,7 +554,7 @@ export default {
 	&--full {
 		position: fixed !important;
 		z-index: 2025 !important;
-		top: 0 !important;
+		inset-block-start: 0 !important;
 		height: 100% !important;
 	}
 

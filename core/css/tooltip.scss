@@ -45,7 +45,7 @@
     }
     &.top .tooltip-arrow,
     &[x-placement^='top'] {
-        left: 50%;
+        inset-inline-start: 50%;
         margin-left: -10px;
     }
     &.bottom,
@@ -58,8 +58,8 @@
         margin-left: 3px;
         padding: 0 10px;
         .tooltip-arrow {
-            top: 50%;
-            left: 0;
+            inset-block-start: 50%;
+            inset-inline-start: 0;
             margin-top: -10px;
             border-width: 10px 10px 10px 0;
             border-right-color: var(--color-main-background);
@@ -70,8 +70,8 @@
         margin-left: -3px;
         padding: 0 5px;
         .tooltip-arrow {
-            top: 50%;
-            right: 0;
+            inset-block-start: 50%;
+            inset-inline-end: 0;
             margin-top: -10px;
             border-width: 10px 0 10px 10px;
             border-left-color: var(--color-main-background);
@@ -83,17 +83,17 @@
     &[x-placement^='top'],
     &.top-right {
         .tooltip-arrow, .arrow {
-            bottom: 0;
+            inset-block-end: 0;
             border-width: 10px 10px 0;
             border-top-color: var(--color-main-background);
         }
     }
     &.top-left .tooltip-arrow {
-        right: 10px;
+        inset-inline-end: 10px;
         margin-bottom: -10px;
     }
     &.top-right .tooltip-arrow {
-        left: 10px;
+        inset-inline-start: 10px;
         margin-bottom: -10px;
     }
     /* BOTTOM */
@@ -102,22 +102,22 @@
     &.bottom-left,
     &.bottom-right {
         .tooltip-arrow, .arrow {
-            top: 0;
+            inset-block-start: 0;
             border-width: 0 10px 10px;
             border-bottom-color: var(--color-main-background);
         }
     }
     &[x-placement^='bottom'] .tooltip-arrow,
     &.bottom .tooltip-arrow {
-        left: 50%;
+        inset-inline-start: 50%;
         margin-left: -10px;
     }
     &.bottom-left .tooltip-arrow {
-        right: 10px;
+        inset-inline-end: 10px;
         margin-top: -10px;
     }
     &.bottom-right .tooltip-arrow {
-        left: 10px;
+        inset-inline-start: 10px;
         margin-top: -10px;
     }
 }

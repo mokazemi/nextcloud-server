@@ -38,8 +38,8 @@ table.multiselect thead {
 /* .hidden-visually for accessbility */
 .fileList a.action-share span:not(.icon):not(.avatar) {
 	position: absolute;
-	left:-10000px;
-	top: auto;
+	inset-inline-start:-10000px;
+	inset-block-start: auto;
 	width: 1px;
 	height: 1px;
 	overflow: hidden;

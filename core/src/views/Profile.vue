@@ -317,7 +317,7 @@ $content-max-width: 640px;
 	&__header {
 		position: sticky;
 		height: 190px;
-		top: -40px;
+		inset-block-start: -40px;
 		background-color: var(--color-main-background-blur);
 		backdrop-filter: var(--filter-background-blur);
 		-webkit-backdrop-filter: var(--filter-background-blur);
@@ -411,7 +411,7 @@ $content-max-width: 640px;
 
 	&__sidebar {
 		position: sticky;
-		top: var(--header-height);
+		inset-block-start: var(--header-height);
 		align-self: flex-start;
 		padding-top: 20px;
 		min-width: 220px;
@@ -432,8 +432,8 @@ $content-max-width: 640px;
 
 		&::v-deep .avatar.avatardiv {
 			.avatardiv__user-status {
-				right: 14px;
-				bottom: 14px;
+				inset-inline-end: 14px;
+				inset-block-end: 14px;
 				width: 34px;
 				height: 34px;
 				background-size: 28px;

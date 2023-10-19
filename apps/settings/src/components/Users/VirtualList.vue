@@ -183,12 +183,12 @@ export default Vue.extend({
 	}
 
 	&__header {
-		top: 0;
+		inset-block-start: 0;
 		z-index: calc(var(--sticky-column-z-index) + 1);
 	}
 
 	&__footer {
-		left: 0;
+		inset-inline-start: 0;
 	}
 
 	&__body {

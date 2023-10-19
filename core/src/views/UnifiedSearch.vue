@@ -745,7 +745,7 @@ $input-padding: 6px;
 		position: sticky;
 		// above search results
 		z-index: 2;
-		top: 0;
+		inset-block-start: 0;
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
@@ -785,8 +785,8 @@ $input-padding: 6px;
 
 		// Loading spinner
 		&::after {
-			right: $input-padding;
-			left: auto;
+			inset-inline-end: $input-padding;
+			inset-inline-start: auto;
 		}
 
 		&-input,
@@ -824,8 +824,8 @@ $input-padding: 6px;
 
 		&-reset, &-submit {
 			position: absolute;
-			top: 0;
-			right: 4px;
+			inset-block-start: 0;
+			inset-inline-end: 4px;
 			width: $input-height - $input-padding;
 			height: $input-height - $input-padding;
 			min-height: 30px;
@@ -843,7 +843,7 @@ $input-padding: 6px;
 		}
 
 		&-submit {
-			right: 28px;
+			inset-inline-end: 28px;
 		}
 	}
 

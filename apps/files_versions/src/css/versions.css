@@ -41,8 +41,8 @@
 
 .versionsTabView img.preview {
 	position: relative;
-	top: 6px;
-	left: 10px;
+	inset-block-start: 6px;
+	inset-inline-start: 10px;
 	border: 1px solid var(--color-border-dark);		
 	cursor: default;
 	padding-right: 0;

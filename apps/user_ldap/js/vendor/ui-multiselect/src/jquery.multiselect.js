@@ -570,8 +570,8 @@ $.widget("ech.multiselect", {
 		// if position utility is not available...
 		} else {
 			menu.css({
-				top: pos.top + button.outerHeight(),
-				left: pos.left
+				inset-block-start: pos.top + button.outerHeight(),
+				inset-inline-start: pos.left
 			});
 		}
 

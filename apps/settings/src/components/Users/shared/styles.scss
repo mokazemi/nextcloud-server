@@ -57,11 +57,11 @@
 			}
 
 			&--avatar {
-				left: 0;
+				inset-inline-start: 0;
 			}
 
 			&--displayname {
-				left: var(--avatar-cell-width);
+				inset-inline-start: var(--avatar-cell-width);
 				border-right: 1px solid var(--color-border);
 			}
 		}
@@ -105,7 +105,7 @@
 
 		&--actions {
 			position: sticky;
-			right: 0;
+			inset-inline-end: 0;
 			z-index: var(--sticky-column-z-index);
 			display: flex;
 			flex-direction: row;

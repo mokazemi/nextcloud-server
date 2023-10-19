@@ -180,12 +180,12 @@ export default {
 
 	/* actions menu */
 	.menu {
-		top: 47px;
+		inset-block-start: 47px;
 		margin-right: 13px;
 	}
 
 	.popovermenu::after {
-		right: 2px;
+		inset-inline-end: 2px;
 	}
 }
 </style>

@@ -1041,7 +1041,7 @@ export default {
 		width: 100%;
 		display: flex;
 		position: sticky;
-		bottom: 0;
+		inset-block-end: 0;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;

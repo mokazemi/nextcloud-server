@@ -233,8 +233,8 @@ export default {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		top: 100%;
-		left: 0;
+		inset-block-start: 100%;
+		inset-inline-start: 0;
 		background-color: var(--color-main-background);
 		border-radius: 8px;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

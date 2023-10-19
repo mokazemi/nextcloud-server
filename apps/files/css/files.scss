@@ -76,7 +76,7 @@
 		position: -webkit-sticky;
 		position: sticky;
 		// breadcrumbs
-		top: 44px;
+		inset-block-start: 44px;
 		// under breadcrumbs, over file list
 		z-index: 60;
 		display: block;
@@ -295,7 +295,7 @@ table th.column-last, table td.column-last {
 #app-content-pendingshares {
 	margin-top: 22px;
 	thead {
-		top: 0;
+		inset-block-start: 0;
 	}
 }
 
@@ -378,7 +378,7 @@ table:not(.view-grid) td.filename input.filename {
 table td.filename form {
 	margin-top: -40px;
 	position: relative;
-	top: -6px;
+	inset-block-start: -6px;
 }
 
 table td.filename a, table td.login, table td.logout, table td.download, table td.upload, table td.create, table td.delete { padding:3px 8px 8px 3px; }
@@ -438,8 +438,8 @@ table td.filename .uploadtext {
 	font-weight: normal;
 	// checkbox width
 	margin-left: 50px;
-	left: 0;
-	bottom: 0;
+	inset-inline-start: 0;
+	inset-block-end: 0;
 	height: 20px;
 	padding: 0 4px;
 	// align with file name
@@ -518,8 +518,8 @@ table td.selection {
 .files-fileList tr td.filename .favorite-mark {
 	position: absolute;
 	display: block;
-	top: -8px;
-	right: -8px;
+	inset-block-start: -8px;
+	inset-inline-end: -8px;
 	line-height: 100%;
 	text-align: center;
 	&.permanent {
@@ -636,8 +636,8 @@ a.action.action-setreminder {
 				/* hide text of the share action */
 				/* .hidden-visually for accessbility */
 				position: absolute;
-				left:-10000px;
-				top: auto;
+				inset-inline-start:-10000px;
+				inset-block-start: auto;
 				width: 1px;
 				height: 1px;
 				overflow: hidden;
@@ -778,10 +778,10 @@ table.dragshadow td.size {
 .mask {
 	z-index: 50;
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	inset-inline-end: 0;
+	inset-block-end: 0;
 	background-color: var(--color-main-background);
 	background-repeat: no-repeat no-repeat;
 	background-position: 50%;
@@ -798,15 +798,15 @@ table.dragshadow td.size {
 
 .newFileMenu {
 	font-weight: 300;
-	top: 100%;
-	left: -48px !important;
+	inset-block-start: 100%;
+	inset-inline-start: -48px !important;
 	margin-top: 4px;
 	min-width: 100px;
 	z-index: 1001;
 
 	/* Center triangle */
 	&::after {
-		left: 84px !important;
+		inset-inline-start: 84px !important;
 	}
 }
 
@@ -825,7 +825,7 @@ table.dragshadow td.size {
 	-ms-user-select: none;
 	user-select: none;
 	display: flex;
-	top: 0;
+	inset-block-start: 0;
 	padding-left: 50px; /* width of the nav toggle button; */
 
 	.actions {
@@ -851,7 +851,7 @@ table.dragshadow td.size {
 /* position controls for apps with app-navigation */
 
 .viewer-mode #app-navigation + #app-content .files-controls {
-	left: 0;
+	inset-inline-start: 0;
 }
 
 .files-filestable .filename .action .icon,
@@ -930,7 +930,7 @@ table.dragshadow td.size {
 	}
 
 	.icon-alert-outline {
-		top: -15px;
+		inset-block-start: -15px;
 		position: relative;
 		margin-right: 4px;
 	}
@@ -1023,8 +1023,8 @@ table.dragshadow td.size {
 					width: $grid-size;
 					height: $grid-size;
 					padding: $grid-pad; // same as action icon bottom and right padding
-					top: 0;
-					left: 0;
+					inset-block-start: 0;
+					inset-inline-start: 0;
 					z-index: -1; // make sure the default click is the link
 
 					.thumbnail {
@@ -1040,9 +1040,9 @@ table.dragshadow td.size {
 						 * Position is inherited from the selection while in grid view
 						 */
 						.favorite-mark {
-							left: auto;
-							top: -11px; // center in corner of thumbnail
-							right: -11px; // center in corner of thumbnail
+							inset-inline-start: auto;
+							inset-block-start: -11px; // center in corner of thumbnail
+							inset-inline-end: -11px; // center in corner of thumbnail
 						}
 					}
 				}
@@ -1050,8 +1050,8 @@ table.dragshadow td.size {
 				.uploadtext {
 					width: 100%;
 					margin: 0;
-					top: 0;
-					bottom: auto;
+					inset-block-start: 0;
+					inset-block-end: auto;
 					// checkbox align
 					height: 28px;
 					padding-top: 4px;
@@ -1115,7 +1115,7 @@ table.dragshadow td.size {
 						display: flex;
 						align-items: center;
 						position: absolute;
-						right: 0;
+						inset-inline-end: 0;
 
 						.action {
 							padding: $grid-pad;
@@ -1174,8 +1174,8 @@ table.dragshadow td.size {
 			&.selection,
 			&.filename .favorite-mark {
 				position: absolute;
-				top: -8px; // half the checkbox width, center on corner of thumbnail
-				left: -8px; // half the checkbox width, center on corner of thumbnail
+				inset-block-start: -8px; // half the checkbox width, center on corner of thumbnail
+				inset-inline-start: -8px; // half the checkbox width, center on corner of thumbnail
 				display: flex;
 				z-index: 10;
 
@@ -1194,7 +1194,7 @@ table.dragshadow td.size {
 
 			/* Position actions menu below file */
 			.popovermenu {
-				left: 0;
+				inset-inline-start: 0;
 				width: $grid-size - 10px; // 2 * margin
 				margin: 0 5px;
 
@@ -1245,8 +1245,8 @@ table.dragshadow td.size {
 	padding: 22px;
 	opacity: .5;
 	float: right;
-	right: var(--default-grid-baseline);
-	top: var(--default-grid-baseline);
+	inset-inline-end: var(--default-grid-baseline);
+	inset-block-start: var(--default-grid-baseline);
 	z-index: 100;
 	position: sticky;
 
@@ -1269,7 +1269,7 @@ table.dragshadow td.size {
  */
 #showgridview {
 	position: fixed;
-	top: 0;
+	inset-block-start: 0;
 }
 
 /* Adjustments for link share page */
@@ -1282,15 +1282,15 @@ table.dragshadow td.size {
 
 		/* Position actions menu correctly below 3-dot-menu */
 		.popovermenu {
-			left: -80px;
+			inset-inline-start: -80px;
 		}
 	}
 
 	/* Right-align view toggle on link share page */
 	#view-toggle {
 		position: absolute;
-		right: 0;
-		top: 0;
+		inset-inline-end: 0;
+		inset-block-start: 0;
 	}
 }
 

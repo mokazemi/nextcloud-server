@@ -505,7 +505,7 @@ export default {
 	& > .panel--header {
 		display: flex;
 		z-index: 1;
-		top: 50px;
+		inset-block-start: 50px;
 		padding: 16px;
 		cursor: grab;
 
@@ -635,7 +635,7 @@ export default {
 
 			div {
 				position: absolute;
-				top: 16px;
+				inset-block-start: 16px;
 				width: 24px;
 				height: 24px;
 				background-size: 24px;
@@ -653,8 +653,8 @@ export default {
 
 		input[type='checkbox'].checkbox + label:before {
 			position: absolute;
-			right: 12px;
-			top: 16px;
+			inset-inline-end: 12px;
+			inset-block-start: 16px;
 		}
 
 		input:focus + label {

@@ -23,8 +23,8 @@ form fieldset > p {
 #email-input-form input[type='submit'].icon-confirm,
 #password-input-form input[type='submit'].icon-confirm {
 	position: absolute;
-	top: 0px;
-	right: -5px;
+	inset-block-start: 0px;
+	inset-inline-end: -5px;
 	width: 45px !important;
 	height: 45px;
 	background-color: transparent !important;

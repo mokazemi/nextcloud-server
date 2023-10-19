@@ -134,9 +134,9 @@ body {
 
 #nojavascript {
 	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
+	inset-block-start: 0;
+	inset-block-end: 0;
+	inset-inline-start: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 9000;
@@ -149,7 +149,7 @@ body {
 		display: block;
 		position: relative;
 		width: 50%;
-		top: 35%;
+		inset-block-start: 35%;
 		margin: 0px auto;
 	}
 	a {
@@ -252,14 +252,14 @@ body {
 
 #show, #dbpassword {
 	position: absolute;
-	right: 1em;
-	top: .8em;
+	inset-inline-end: 1em;
+	inset-block-start: .8em;
 	float: right;
 }
 
 #show + label, #dbpassword + label {
-	right: 21px;
-	top: 15px !important;
+	inset-inline-end: 21px;
+	inset-block-start: 15px !important;
 	margin: -14px !important;
 	padding: 14px !important;
 }
@@ -310,7 +310,7 @@ body {
 }
 #personal-show + label {
 	display: block;
-	right: 0;
+	inset-inline-end: 0;
 	margin-top: -43px;
 	margin-right: -4px;
 	padding: 22px;
@@ -395,7 +395,7 @@ tr {
 .selectedActions > a {
 	opacity: .5;
 	position: relative;
-	top: 2px;
+	inset-block-start: 2px;
 
 	&:hover, &:focus {
 		opacity: 1;
@@ -724,7 +724,7 @@ li.crumb {
 		}
 		// Fix because of the display flex
 		.popovermenu {
-			top: 100%;
+			inset-block-start: 100%;
 			margin-right: 3px;
 			ul {
 				max-height: 345px;
@@ -806,7 +806,7 @@ li.crumb {
 
 fieldset {
 	&.warning legend, &.update legend {
-		top: 18px;
+		inset-block-start: 18px;
 		position: relative;
 	}
 	&.warning legend + p, &.update legend + p {

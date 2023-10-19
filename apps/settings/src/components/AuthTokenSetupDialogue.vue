@@ -196,7 +196,7 @@ export default {
 			background-size: 16px 16px;
 			display: inline-block;
 			position: relative;
-			top: 3px;
+			inset-block-start: 3px;
 			margin-left: 5px;
 			margin-right: 8px;
 		}

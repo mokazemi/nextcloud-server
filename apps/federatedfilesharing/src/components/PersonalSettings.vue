@@ -142,7 +142,7 @@ export default {
 			return `padding:10px;background-color:${this.color};color:${this.textColor};border-radius:3px;padding-left:4px;`
 		},
 		linkStyle() {
-			return `background-image:url(${this.logoPathAbsolute});width:50px;height:30px;position:relative;top:8px;background-size:contain;display:inline-block;background-repeat:no-repeat; background-position: center center;`
+			return `background-image:url(${this.logoPathAbsolute});width:50px;height:30px;position:relative;inset-block-start:8px;background-size:contain;display:inline-block;background-repeat:no-repeat; background-position: center center;`
 		},
 		htmlCode() {
 			return `<a target="_blank" rel="noreferrer noopener" href="${this.reference}" style="${this.backgroundStyle}">

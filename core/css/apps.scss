@@ -242,8 +242,8 @@ kbd {
 
 			/* align loader */
 			&.icon-loading-small:after {
-				left: 22px;
-				top: 22px;
+				inset-inline-start: 22px;
+				inset-block-start: 22px;
 			}
 
 			/* hide deletion/collapse of subitems */
@@ -286,7 +286,7 @@ kbd {
 
 					/* align loader */
 					&.icon-loading-small:after {
-						left: 22px; /* 44px / 2 */
+						inset-inline-start: 22px; /* 44px / 2 */
 					}
 
 					> .app-navigation-entry-deleted {
@@ -381,7 +381,7 @@ kbd {
 
 			/* popover fix the flex positionning of the li parent */
 			> .app-navigation-entry-menu {
-				top: 44px;
+				inset-block-start: 44px;
 			}
 
 			/* show edit/undo field if editing/deleted */
@@ -432,7 +432,7 @@ kbd {
 
 			/* Needed for IE11; otherwise the button appears to the right of the
 			 * link. */
-			left: 0;
+			inset-inline-start: 0;
 
 			&:focus-visible {
 				opacity: 1;
@@ -635,7 +635,7 @@ kbd {
 					opacity 250ms ease-in-out,
 					z-index 250ms ease-in-out;
 		position: absolute;
-		left: 0;
+		inset-inline-start: 0;
 		background-color: var(--color-main-background);
 		box-sizing: border-box;
 	}
@@ -750,8 +750,8 @@ $min-content-width: variables.$breakpoint-mobile - variables.$navigation-width -
 	display: block;
 	position: -webkit-sticky;
 	position: sticky;
-	top: variables.$header-height;
-	right:0;
+	inset-block-start: variables.$header-height;
+	inset-inline-end:0;
 	overflow-y: auto;
 	overflow-x: hidden;
 	z-index: 1500;
@@ -858,8 +858,8 @@ $min-content-width: variables.$breakpoint-mobile - variables.$navigation-width -
 			content: '';
 			width: 44px;
 			height: 44px;
-			top: 0;
-			left: 0;
+			inset-block-start: 0;
+			inset-inline-start: 0;
 			display: block;
 		}
 
@@ -1002,18 +1002,18 @@ $outter-margin: math.div($popoveritem-height - $popovericon-size, 2);
 	z-index: 110;
 	margin: 5px;
 	margin-top: -5px;
-	right: 0;
+	inset-inline-end: 0;
 	filter: drop-shadow(0 1px 3px var(--color-box-shadow));
 	display: none;
 	will-change: filter;
 
 	&:after {
-		bottom: 100%;
+		inset-block-end: 100%;
 		// Required right-distance is half menu icon size + right padding
 		// = 16px/2 + 14px = 22px
 		// popover right margin is 5px, arrow width is 9px to center and border is 1px
 		// 22px - 9px - 5px - 1px = 7px
-		right: 7px;
+		inset-inline-end: 7px;
 		/* change this to adjust the arrow position */
 		border: solid transparent;
 		content: ' ';
@@ -1027,21 +1027,21 @@ $outter-margin: math.div($popoveritem-height - $popovericon-size, 2);
 	/* Center the popover */
 	&.menu-center {
 		transform: translateX(50%);
-		right: 50%;
+		inset-inline-end: 50%;
 		margin-right: 0;
 		&:after {
-			right: 50%;
+			inset-inline-end: 50%;
 			transform: translateX(50%);
 		}
 	}
 	/* Align the popover to the left */
 	&.menu-left {
-		right: auto;
-		left: 0;
+		inset-inline-end: auto;
+		inset-inline-start: 0;
 		margin-right: 0;
 		&:after {
-			left: 6px;
-			right: auto;
+			inset-inline-start: 6px;
+			inset-inline-end: auto;
 		}
 	}
 
@@ -1252,7 +1252,7 @@ $outter-margin: math.div($popoveritem-height - $popovericon-size, 2);
 .app-content-list {
 	position: -webkit-sticky;
 	position: relative;
-	top: 0;
+	inset-block-start: 0;
 	border-right: 1px solid var(--color-border);
 	display: flex;
 	flex-direction: column;
@@ -1340,8 +1340,8 @@ $outter-margin: math.div($popoveritem-height - $popovericon-size, 2);
 				}
 			}
 			+ label {
-				top: 14px;
-				left: 7px;
+				inset-block-start: 14px;
+				inset-inline-start: 7px;
 				// hidden by default, only chown on hover-focus or if checked
 				display: none;
 				&::before {
@@ -1356,8 +1356,8 @@ $outter-margin: math.div($popoveritem-height - $popovericon-size, 2);
 
 		.app-content-list-item-star {
 			display: flex;
-			top: 10px;
-			left: 32px;
+			inset-block-start: 10px;
+			inset-inline-start: 32px;
 			background-size: 16px;
 			height: 20px;
 			width: 20px;
@@ -1381,7 +1381,7 @@ $outter-margin: math.div($popoveritem-height - $popovericon-size, 2);
 			object-fit: cover;
 			user-select: none;
 			cursor: pointer;
-			top: 50%;
+			inset-block-start: 50%;
 			margin-top: -20px;
 		}
 
@@ -1423,7 +1423,7 @@ $outter-margin: math.div($popoveritem-height - $popovericon-size, 2);
 				margin: 0;
 				// action icon have -7px margin
 				// default popover is normally 5px
-				right: -2px;
+				inset-inline-end: -2px;
 			}
 		}
 	}

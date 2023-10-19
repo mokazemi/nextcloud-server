@@ -101,8 +101,8 @@ $label-padding: 8px;
 
 		span {
 			position: absolute;
-			top: calc(50% - math.div($icon-size, 2));
-			left: $label-padding;
+			inset-block-start: calc(50% - math.div($icon-size, 2));
+			inset-inline-start: $label-padding;
 			display: block;
 			width: $icon-size;
 			height: $icon-size;
