@@ -575,8 +575,8 @@ kbd {
 		input[type='text'] {
 			width: 100%;
 			min-width: 0; /* firefox hack: override auto */
-			border-bottom-right-radius: 0;
-			border-top-right-radius: 0;
+			border-end-end-radius: 0;
+			border-start-end-radius: 0;
 		}
 		button,
 		input:not([type='text']) {
@@ -590,10 +590,10 @@ kbd {
 				margin-left: -1px;
 			}
 			&:last-child {
-				border-bottom-right-radius: var(--border-radius);
-				border-top-right-radius: var(--border-radius);
-				border-bottom-left-radius: 0;
-				border-top-left-radius: 0;
+				border-end-end-radius: var(--border-radius);
+				border-start-end-radius: var(--border-radius);
+				border-end-start-radius: 0;
+				border-start-start-radius: 0;
 			}
 		}
 	}
@@ -680,14 +680,14 @@ kbd {
 
 @media only screen and (max-width: variables.$breakpoint-mobile) {
 	#content {
-		border-top-left-radius: var(--border-radius-large);
-		border-top-right-radius: var(--border-radius-large);
+		border-start-start-radius: var(--border-radius-large);
+		border-start-end-radius: var(--border-radius-large);
 	}
 	#app-navigation {
-		border-top-left-radius: var(--border-radius-large);
+		border-start-start-radius: var(--border-radius-large);
 	}
 	#app-sidebar {
-		border-top-right-radius: var(--border-radius-large);
+		border-start-end-radius: var(--border-radius-large);
 	}
 }
 
