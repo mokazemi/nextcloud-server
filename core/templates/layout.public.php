@@ -26,7 +26,7 @@ p($theme->getTitle());
 	<?php emit_script_loading_tags($_); ?>
 	<?php print_unescaped($_['headers']); ?>
 </head>
-<body id="<?php p($_['bodyid']);?>">
+<body dir="<?php p($_['direction']) ?>" id="<?php p($_['bodyid']);?>">
 <?php include('layout.noscript.warning.php'); ?>
 <?php foreach ($_['initialStates'] as $app => $initialState) { ?>
 	<input type="hidden" id="initial-state-<?php p($app); ?>" value="<?php p(base64_encode($initialState)); ?>">

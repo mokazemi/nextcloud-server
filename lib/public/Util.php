@@ -136,6 +136,16 @@ class Util {
 	}
 
 	/**
+	 * check if a language is rtl
+	 * @param string $language
+	 * @return bool
+	 * @since 6.0.0 - parameter $language was added in 8.0.0
+	 */
+	public static function isRtlLanguage($language) {
+		return in_array($language, ["fa", "ar"]);
+	}
+
+	/**
 	 * add a css file
 	 * @param string $application
 	 * @param string $file

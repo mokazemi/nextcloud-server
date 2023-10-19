@@ -14,7 +14,7 @@
 		<?php emit_script_loading_tags($_); ?>
 		<?php print_unescaped($_['headers']); ?>
 	</head>
-	<body id="body-public" class="layout-base">
+	<body dir="<?php p($_['direction']) ?>" id="body-public" class="layout-base">
 		<?php include 'layout.noscript.warning.php'; ?>
 		<?php foreach ($_['initialStates'] as $app => $initialState) { ?>
 			<input type="hidden" id="initial-state-<?php p($app); ?>" value="<?php p(base64_encode($initialState)); ?>">

@@ -208,6 +208,8 @@ class TemplateLayout extends \OC_Template {
 		$locale = \OC::$server->getL10NFactory()->findLocale($lang);
 
 		$lang = str_replace('_', '-', $lang);
+		$isRtl = \OCP\Util::isRtlLanguage($lang);
+		$this->assign('direction', $isRtl ? "rtl" : "ltr");
 		$this->assign('language', $lang);
 		$this->assign('locale', $locale);
 
