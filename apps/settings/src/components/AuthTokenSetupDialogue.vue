@@ -206,7 +206,7 @@ export default {
 	.app-password-label {
 		display: table-cell;
 		margin-right: 1em;
-		text-align: left;
+		text-align: start;
 		vertical-align: middle;
 		width: 100px;
 	}

@@ -235,7 +235,7 @@ export default {
 
 		& > span {
 			min-width: 50px;
-			text-align: right;
+			text-align: end;
 			color: var(--color-text-maxcontrast);
 			padding-right: 10px;
 			padding-top: 6px;
@@ -261,7 +261,7 @@ export default {
 		border-radius: var(--border-radius);
 		color: var(--color-text-maxcontrast);
 		font-weight: normal;
-		text-align: left;
+		text-align: start;
 		font-size: 1em;
 	}
 

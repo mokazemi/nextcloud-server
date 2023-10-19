@@ -314,7 +314,7 @@ $comment-padding: 10px;
 	&_loading,
 	&__timestamp {
 		margin-left: auto;
-		text-align: right;
+		text-align: end;
 		white-space: nowrap;
 		color: var(--color-text-maxcontrast);
 	}
